@@ -21,7 +21,7 @@ git make ncdu -y
 ## Go kurulumu ile devam ediyoruz.
 
 ```
-ver="1.19.4"
+ver="1.20.1"
 cd $HOME
 wget "https://golang.org/dl/go$ver.linux-amd64.tar.gz"
 sudo rm -rf /usr/local/go
@@ -35,7 +35,7 @@ go version
 go versiyon komutunun çıktısı şu şekilde olmalıdır:
 
 ```
-go version go1.19.4 linux/amd64
+go version go1.20.1 linux/amd64
 ```
 
 ## celestia-node Kurulumu
@@ -45,7 +45,7 @@ cd $HOME
 rm -rf celestia-node 
 git clone https://github.com/celestiaorg/celestia-node.git 
 cd celestia-node/ 
-git checkout tags/v0.9.5 
+git checkout tags/v0.10.0
 make build 
 make install 
 make cel-key
@@ -60,8 +60,8 @@ celestia version
 Çıktı şu şekilde olmalı:
 
 ```
-Semantic version: v0.9.5
-Commit: 2718b1dfb7ee4fbcc8614601dc7d58019bfb1437
+Semantic version: v0.10.0
+Commit: cd8d0b9afd6dd982c43ab306cb9b160e985c6da1
 ```
 
 ## Init işlemini yapalım
